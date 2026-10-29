@@ -11,7 +11,10 @@
 <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet">
 <link href="styles.css" rel="stylesheet">
-<link href="custom.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+<link href="custom.css?v=2" rel="stylesheet">
+<link href="fx.css?v=1" rel="stylesheet">
+<script>document.documentElement.classList.add('fx-js')</script>
 </head>
 <body id="page-top">
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -28,10 +31,11 @@
     </div>
   </div>
 </nav>
-<header class="masthead">
+<header class="masthead video-hero">
+  <video data-hero autoplay muted loop playsinline preload="auto" poster="img/hero-poster.jpg" aria-hidden="true"><source src="img/hero.mp4" type="video/mp4"></video>
   <div class="container px-4 px-lg-5 h-100">
     <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-      <div class="col-lg-8 align-self-end"><h1 class="text-white font-weight-bold">Feel good about your hair, skin and nails</h1><hr class="divider"></div>
+      <div class="col-lg-10 align-self-end"><span class="hero-kick">Ladies salon · Jeddah</span><h1 class="text-white">Feel good about your <em>hair, skin</em> and nails</h1><hr class="divider"></div>
       <div class="col-lg-8 align-self-baseline"><p class="text-white-75 mb-5">A calm ladies salon in Jeddah with friendly stylists, clean tools and easy booking on WhatsApp.</p><a class="btn btn-primary btn-xl" href="#contact">Book an appointment</a></div>
     </div>
   </div>
@@ -41,7 +45,7 @@
   <div class="container px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
       <div class="col-lg-8 text-center">
-        <h2 class="text-white mt-0">Your time to relax</h2>
+        <h2 class="text-white mt-0" data-reveal>Your time to relax</h2>
         <hr class="divider divider-light">
         <p class="text-white-75 mb-4">At Lumina we keep things simple: listen first, then do great work. Walk in for a quick trim or plan your full bridal look with us.</p>
         <a class="btn btn-light btn-xl" href="#services">See services</a>
@@ -51,22 +55,34 @@
 </section>
 <section class="page-section" id="services">
   <div class="container px-4 px-lg-5">
-    <h2 class="text-center mt-0">Services</h2>
+    <h2 class="text-center mt-0" data-reveal>Services</h2>
     <hr class="divider">
-    <div class="row gx-4 gx-lg-5"><div class="col-lg-3 col-md-6 text-center"><div class="mt-5"><div class="mb-2"><i class="bi bi-scissors fs-1 text-primary" aria-hidden="true"></i></div><h3 class="h4 mb-2">Hair</h3><p class="text-muted mb-1">Cuts, blow dry, colour, highlights and keratin.</p><p class="fw-bold mb-0">From SAR 80</p></div></div><div class="col-lg-3 col-md-6 text-center"><div class="mt-5"><div class="mb-2"><i class="bi bi-brush fs-1 text-primary" aria-hidden="true"></i></div><h3 class="h4 mb-2">Makeup</h3><p class="text-muted mb-1">Everyday, party and bridal makeup.</p><p class="fw-bold mb-0">From SAR 150</p></div></div><div class="col-lg-3 col-md-6 text-center"><div class="mt-5"><div class="mb-2"><i class="bi bi-gem fs-1 text-primary" aria-hidden="true"></i></div><h3 class="h4 mb-2">Nails</h3><p class="text-muted mb-1">Manicure, pedicure, gel and nail art.</p><p class="fw-bold mb-0">From SAR 60</p></div></div><div class="col-lg-3 col-md-6 text-center"><div class="mt-5"><div class="mb-2"><i class="bi bi-flower1 fs-1 text-primary" aria-hidden="true"></i></div><h3 class="h4 mb-2">Skin and spa</h3><p class="text-muted mb-1">Facials, cleansing and relaxing treatments.</p><p class="fw-bold mb-0">From SAR 120</p></div></div></div>
+    <div class="row gx-4 gx-lg-5"><div class="col-lg-3 col-md-6 text-center" data-reveal><div class="mt-5"><div class="mb-2"><i class="bi bi-scissors fs-1 text-primary" aria-hidden="true"></i></div><h3 class="h4 mb-2">Hair</h3><p class="text-muted mb-1">Cuts, blow dry, colour, highlights and keratin.</p><p class="fw-bold mb-0">From SAR 80</p></div></div><div class="col-lg-3 col-md-6 text-center" data-reveal><div class="mt-5"><div class="mb-2"><i class="bi bi-brush fs-1 text-primary" aria-hidden="true"></i></div><h3 class="h4 mb-2">Makeup</h3><p class="text-muted mb-1">Everyday, party and bridal makeup.</p><p class="fw-bold mb-0">From SAR 150</p></div></div><div class="col-lg-3 col-md-6 text-center" data-reveal><div class="mt-5"><div class="mb-2"><i class="bi bi-gem fs-1 text-primary" aria-hidden="true"></i></div><h3 class="h4 mb-2">Nails</h3><p class="text-muted mb-1">Manicure, pedicure, gel and nail art.</p><p class="fw-bold mb-0">From SAR 60</p></div></div><div class="col-lg-3 col-md-6 text-center" data-reveal><div class="mt-5"><div class="mb-2"><i class="bi bi-flower1 fs-1 text-primary" aria-hidden="true"></i></div><h3 class="h4 mb-2">Skin and spa</h3><p class="text-muted mb-1">Facials, cleansing and relaxing treatments.</p><p class="fw-bold mb-0">From SAR 120</p></div></div></div>
   </div>
 </section>
 <div id="portfolio"><div class="container-fluid p-0"><div class="row g-0"><div class="col-lg-3 col-6"><a class="portfolio-box" href="img/salon.jpg" title="Our salon"><img class="img-fluid" src="img/salon-thumb.jpg" alt="Our salon" width="800" height="536" loading="lazy"><div class="portfolio-box-caption"><div class="project-category text-white-50">Lumina</div><div class="project-name">Our salon</div></div></a></div><div class="col-lg-3 col-6"><a class="portfolio-box" href="img/cut.jpg" title="Cut and style"><img class="img-fluid" src="img/cut-thumb.jpg" alt="Cut and style" width="800" height="536" loading="lazy"><div class="portfolio-box-caption"><div class="project-category text-white-50">Lumina</div><div class="project-name">Cut and style</div></div></a></div><div class="col-lg-3 col-6"><a class="portfolio-box" href="img/nails.jpg" title="Nail care"><img class="img-fluid" src="img/nails-thumb.jpg" alt="Nail care" width="800" height="536" loading="lazy"><div class="portfolio-box-caption"><div class="project-category text-white-50">Lumina</div><div class="project-name">Nail care</div></div></a></div><div class="col-lg-3 col-6"><a class="portfolio-box" href="img/spa.jpg" title="Spa room"><img class="img-fluid" src="img/spa-thumb.jpg" alt="Spa room" width="800" height="536" loading="lazy"><div class="portfolio-box-caption"><div class="project-category text-white-50">Lumina</div><div class="project-name">Spa room</div></div></a></div></div></div></div>
 <section class="page-section bg-dark text-white">
   <div class="container px-4 px-lg-5 text-center">
-    <h2 class="mb-4">Booking a bridal or party look?</h2>
+    <h2 class="mb-4" data-reveal>Booking a bridal or party look?</h2>
     <a class="btn btn-light btn-xl" href="https://wa.me/" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </div>
+</section>
+<section class="page-section lookbook" id="lookbook">
+  <div class="container px-4 px-lg-5">
+    <h2 class="text-center mt-0" data-reveal>The lookbook</h2>
+    <hr class="divider" data-reveal>
+    <p class="text-center text-muted mb-5" data-reveal>Tap a card to flip through the looks.</p>
+    <div class="row gx-4 gy-4">
+      <div class="col-md-4" data-reveal><figure class="swap m-0" role="button" tabindex="0" aria-label="Hair and colour looks"><img src="img/cut.jpg" alt="Hair cut and styling" loading="lazy"><img src="img/salon.jpg" alt="Salon chair and mirror" loading="lazy"><figcaption>Hair and colour<small>Cuts, blow dry, colour</small></figcaption></figure></div>
+      <div class="col-md-4" data-reveal><figure class="swap m-0" role="button" tabindex="0" aria-label="Nails looks"><img src="img/nails.jpg" alt="Manicure and nail art" loading="lazy"><img src="img/nails-thumb.jpg" alt="Nail colour close up" loading="lazy"><figcaption>Nails<small>Manicure, pedicure, gel</small></figcaption></figure></div>
+      <div class="col-md-4" data-reveal><figure class="swap m-0" role="button" tabindex="0" aria-label="Spa looks"><img src="img/spa.jpg" alt="Spa treatment" loading="lazy"><img src="img/hero-poster.jpg" alt="Candle lit spa room" loading="lazy"><figcaption>Spa and skin<small>Facials, massage, care</small></figcaption></figure></div>
+    </div>
   </div>
 </section>
 <section class="page-section" id="contact">
   <div class="container px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
-      <div class="col-lg-8 col-xl-6 text-center"><h2 class="mt-0">Book an appointment</h2><hr class="divider"><p class="text-muted mb-5">Send us your preferred day and service and we will confirm your time.</p></div>
+      <div class="col-lg-8 col-xl-6 text-center"><h2 class="mt-0" data-reveal>Book an appointment</h2><hr class="divider"><p class="text-muted mb-5">Send us your preferred day and service and we will confirm your time.</p></div>
     </div>
     <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
       <div class="col-lg-6"><form action="https://formspree.io/f/your-form-id" method="POST">
@@ -86,5 +102,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
 <script src="scripts.js"></script>
+<script src="fx.js?v=1"></script>
 </body>
 </html>
