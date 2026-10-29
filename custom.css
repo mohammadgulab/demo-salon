@@ -1,0 +1,14 @@
+
+/* Demo additions */
+.wa-float{position:fixed;right:16px;bottom:16px;z-index:1050;display:flex;align-items:center;gap:.5rem;background:#25d366;color:#fff;border-radius:999px;padding:.7rem 1.1rem .7rem .8rem;font-weight:700;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.wa-float:hover,.wa-float:focus{color:#fff;background:#1ebe5b}
+.wa-float:focus-visible{outline:3px solid #111;outline-offset:3px}
+@media (max-width:420px){.wa-float span{display:none}.wa-float{padding:.8rem}}
+.map-embed{display:block;width:100%;height:320px;border:0;border-radius:12px}
+.demo-note{font-size:.8rem;opacity:.8}
+img{max-width:100%;height:auto}
+html{scroll-padding-top:72px}
+
+.masthead h1{font-size:clamp(2rem,7vw,3.5rem)}
+#mainNav .navbar-brand{font-size:1.05rem}
+.portfolio-box img{aspect-ratio:3/2;object-fit:cover;width:100%}
